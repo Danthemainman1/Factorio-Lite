@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorio-Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="toolbar">
+                <button class="tool-btn" data-type="belt">Belt</button>
+                <button class="tool-btn" data-type="drill">Drill</button>
+                <button class="tool-btn" data-type="furnace">Furnace</button>
+                <button class="tool-btn" data-type="delete">Delete</button>
+            </div>
+            <div id="info-panel">
+                <p>Selected: <span id="selected-tool">None</span></p>
+                <p>Press 'R' to Rotate</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
